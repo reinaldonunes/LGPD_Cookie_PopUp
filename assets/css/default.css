@@ -1,0 +1,74 @@
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');
+/*  Developed by Reinaldo J. Nunes
+    Github profile: @reinaldonunes
+*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+
+    font-family:'Poppins',sans-serif;
+}
+
+body{background:#eee;display:flex;align-items:center;justify-content: center;}
+
+.headline{
+    font-size:50px;
+    color:#ccc;
+}
+
+
+/* CSS DEFINE COOKIE BAR */
+#cookiesPage{
+    position:fixed;
+    width:100%;
+    padding:25px 100px;
+    background:#2d88ff;
+    box-shadow:0px 0px 15px #aaa;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items:center;
+    
+    bottom:-500px;
+    opacity:0;
+    visibility: hidden;
+    z-index:-1;
+
+    transition:0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-transition:0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition:0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#cookiesPage.showCookie{
+    opacity:1;
+    visibility: visible;
+    bottom:0px;
+    z-index:5;
+}
+
+#cookiesPage article{display:flex;width:78%;}
+#cookiesPage article p{color:#fff;font-size:14px;}
+#cookiesPage aside{width:20%;display:flex;justify-content: flex-end;}
+#cookiesPage button{
+    border:0px;
+    color:#1B1B1B;
+    background:#fff;
+    border-radius:5px;
+    padding:8px 30px;
+    width:fit-content;
+    font-weight:bold;
+    cursor:pointer;
+}
+@media screen and (max-width:700px){
+    #cookiesPage{flex-direction:column;padding:25px 30px;}
+    #cookiesPage article,
+    #cookiesPage aside{width:100%;}
+    #cookiesPage article p{text-align:center;}
+    #cookiesPage aside{justify-content:center;margin-top:10px;}
+}
+/* END CSS DEFINE COOKIE BAR */
