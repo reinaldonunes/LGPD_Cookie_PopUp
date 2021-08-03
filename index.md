@@ -18,6 +18,6 @@
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-        <script src="https://github.com/reinaldonunes/Elegant_Cookie_Bar/blob/main/assets/assets/js/mainCookie.js"></script>
+        <script src="https://github.com/reinaldonunes/Elegant_Cookie_Bar/blob/main/assets/js/mainCookie.js"></script>
     </body>
 </html>
