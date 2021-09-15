@@ -12,13 +12,22 @@ $(document).ready(function(){
                 $("#cookiesPage").addClass("showCookie");
             },1500);
             $("#cookiesPage button").click(function(){
-                $("#cookiesPage").removeClass("showCookie");
-                defineNewDateExpiration();
+                var keyCode = this.getAttribute('value');
+                if(keyCode == 'accept'){
+                    $("#cookiesPage").removeClass("showCookie");
+                    defineNewDateExpiration();
+                }else{
+                    $("#cookiesPage").removeClass("showCookie");
+                }
+                
             })
             //
         }else if(conditional=='hidden'){
             $("#cookiesPage button").click(function(){
-                $("#cookiesPage").removeClass("showCookie");
+                var keyCode = this.getAttribute('value');
+                if(keyCode == 'accept'){
+                    $("#cookiesPage").removeClass("showCookie");
+                }
             });
         }
     }

@@ -25,15 +25,16 @@ body{background:#eee;display:flex;align-items:center;justify-content: center;}
 /* CSS DEFINE COOKIE BAR */
 #cookiesPage{
     position:fixed;
-    width:100%;
-    padding:25px 100px;
-    background:#2d88ff;
-    box-shadow:0px 0px 15px #aaa;
+    width:90%;
+    max-width:450px;
+    background:#fff;
+    box-shadow:0px 0px 15px #ddd;
     display:flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
+    flex-direction:column;
+    border-radius:15px;
     align-items:center;
-    
+    left:50%;
+    margin-left:-225px;
     bottom:-500px;
     opacity:0;
     visibility: hidden;
@@ -47,28 +48,55 @@ body{background:#eee;display:flex;align-items:center;justify-content: center;}
 #cookiesPage.showCookie{
     opacity:1;
     visibility: visible;
-    bottom:0px;
+    bottom:25px;
     z-index:5;
 }
 
-#cookiesPage article{display:flex;width:78%;}
-#cookiesPage article p{color:#fff;font-size:14px;}
-#cookiesPage aside{width:20%;display:flex;justify-content: flex-end;}
+#cookiesPage article{
+    display:flex;
+    width:100%;
+    padding:25px;
+    flex-direction:column;
+}
+#cookiesPage article h6{color:rgb(58, 58, 58);font-size:16px;margin-bottom:6px;}
+#cookiesPage article p{color:rgb(90, 90, 90);font-size:14px;text-align: justify;}
+#cookiesPage aside{
+    border-top:1px solid #eee;
+    width:100%;display:flex;justify-content: flex-end;}
 #cookiesPage button{
+    display:flex;
+    width:50%;
+    padding:12px 15px;
     border:0px;
     color:#1B1B1B;
     background:#fff;
-    border-radius:5px;
-    padding:8px 30px;
-    width:fit-content;
     font-weight:bold;
     cursor:pointer;
+    border-right:1px solid #ddd;
+    justify-content: center;
+
+    transition:0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-transition:0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -moz-transition:0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-@media screen and (max-width:700px){
-    #cookiesPage{flex-direction:column;padding:25px 30px;}
+#cookiesPage button:nth-of-type(1){
+    border-bottom-left-radius: 15px;
+    color:brown;
+}
+#cookiesPage button:nth-of-type(2){
+    border-right:none;
+    border-bottom-right-radius: 15px;
+    color:#26aa61;
+}
+@media screen and (max-width:500px){
+    /*#cookiesPage{flex-direction:column;padding:25px 30px;}
     #cookiesPage article,
     #cookiesPage aside{width:100%;}
     #cookiesPage article p{text-align:center;}
     #cookiesPage aside{justify-content:center;margin-top:10px;}
+    */
+    #cookiesPage{width:90%;max-width:100%;margin-left:auto;left:5%;margin-right:5%;}
+    #cookiesPage article h6{font-size:14px;text-align:center;}
+    #cookiesPage article p{text-align:center;font-size:13px;}
 }
 /* END CSS DEFINE COOKIE BAR */
