@@ -3,4 +3,4 @@
 ##
 <a href="https://reinaldonunes.github.io/Elegant_Cookie_Bar/" target="_blank">ONLINE VIEW HERE</a>
 <br /><br />
-<img src="https://i.ibb.co/g7XP2KB/elegant-bar.png" />
+<img src="https://i.ibb.co/BzWFy66/captura-tela-nova.png" />

@@ -14,7 +14,7 @@
     font-family:'Poppins',sans-serif;
 }
 
-body{background:#eee;display:flex;align-items:center;justify-content: center;}
+body{background:#eee;display:flex;height:100%;align-items:center;justify-content: center;}
 
 .headline{
     font-size:50px;
