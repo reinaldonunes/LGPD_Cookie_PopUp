@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var seenLastDay = getCookie('myCookie'); // change the name of your cookie here
+    var seenLastDay = getCookie('lgpdCookie'); // change the name of your cookie here
     if(seenLastDay == null){
         showPopCookie('visible');
     }else{
@@ -37,7 +37,7 @@ $(document).ready(function(){
         var daysToExpiration = 1;
         data.setTime(data.getTime()+(daysToExpiration*24*60*60*1000));
         var expires = 'expires="+data.toUTCString();';
-        var cookie = 'mainCookie="Ainda não expirou";'+expires; // this cookie name must be equal line 2
+        var cookie = 'lgpdCookie="Ainda não expirou";'+expires; // this cookie name must be equal line 2
         document.cookie = cookie;
     }
     function getCookie(nomeCookie){
