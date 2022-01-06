@@ -1,4 +1,4 @@
-# Elegent_Cookie_Bar
+# LGPD Cookie Pop-up
  Cookie notification bar, in accordance with LGPD (Brazil), using HTML, CSS and JavaScript, in an elegant and simplified way.
 ##
 <a href="https://reinaldonunes.github.io/Elegant_Cookie_Bar/" target="_blank">ONLINE VIEW HERE</a>
